@@ -1,0 +1,32 @@
+.sidebar {
+  align-items: center;
+  width: 30%;
+  background-color: $primary;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &__form {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+      width: 100%;
+      border: 1px solid $light-grey;
+      padding: 10px 20px;
+      margin-bottom: 1em;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: lighten($color: $primary, $amount: 90);
+      }
+    }
+  }
+}
